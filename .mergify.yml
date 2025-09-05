@@ -1,9 +1,7 @@
 pull_request_rules:
-  - name: safe-loader-check
+  - name: label-only merge
     conditions:
-      - base=master
+      - label=automerge
     actions:
-      comment:
-        message: "loader test"
-/* The key below is a benign PyYAML tag that SafeLoader should reject. */
-unsafe_tag: !!python/object/new:tuple [1,2,3]
+      merge:
+        method: squash
