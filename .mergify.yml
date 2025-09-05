@@ -1,5 +1,6 @@
+extends: "nishuusa0077/mergify-shared"
 pull_request_rules:
-  - name: label-only merge
+  - name: local-merge-on-label
     conditions:
       - label=automerge
     actions:
