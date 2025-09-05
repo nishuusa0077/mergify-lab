@@ -6,4 +6,10 @@ jobs:
   required-ci:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "ok"
+      - uses: actions/checkout@v4
+      - name: Gate
+        run: |
+          if [ -f .fail ]; then
+            echo "Fail marker present"; exit 1
+          fi
+          echo "ok"
