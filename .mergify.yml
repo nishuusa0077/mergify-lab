@@ -1,4 +1,4 @@
-extends: "nishuusa0077/mergify-shared@master"
+extends: "mergify-shared"   # same owner; default branch & .mergify.yml assumed
 pull_request_rules:
   - name: local-merge-on-label
     conditions:
