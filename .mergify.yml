@@ -1,8 +1,7 @@
 pull_request_rules:
-  - name: label then merge
+  - name: label-only merge
     conditions:
       - label=automerge
-      - '#approved-reviews-by>=1'
     actions:
       merge:
         method: squash
