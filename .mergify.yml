@@ -1,4 +1,4 @@
-extends: "nishuusa0077/mergify-shared"
+extends: "nishuusa0077/mergify-shared@master"
 pull_request_rules:
   - name: local-merge-on-label
     conditions:
